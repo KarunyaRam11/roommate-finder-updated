@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Karunya Ram",
+        "room": "303",
+        "room_type": 2,
+        "contact": "12345"
+    },
+    {
+        "name": "Udaya Bhaskara ",
+        "room": "303",
+        "room_type": 2,
+        "contact": "886622"
+    },
+    {
+        "name": "test 1",
+        "room": "101",
+        "room_type": 2,
+        "contact": "abcdefg1107"
+    },
+    {
+        "name": "test 2",
+        "room": "101",
+        "room_type": 2,
+        "contact": "arwgsar43"
+    },
+    {
+        "name": "karan",
+        "room": "100",
+        "room_type": 3,
+        "gender": "Male",
+        "block": "Ganga B",
+        "year": "1st Year",
+        "contact": "jhgebkwaj"
+    },
+    {
+        "name": "Karunya Ram",
+        "room": "1122",
+        "room_type": 2,
+        "gender": "Male",
+        "block": "Ganga A",
+        "year": "1st Year",
+        "contact": "karunyaram11"
+    },
+    {
+        "name": "Udaya Bhaskara ",
+        "room": "1122",
+        "room_type": 2,
+        "gender": "Male",
+        "block": "Ganga A",
+        "year": "1st Year",
+        "contact": "12345"
+    },
+    {
+        "name": "uday",
+        "room": "009",
+        "room_type": 3,
+        "gender": "Male",
+        "block": "Ganga A",
+        "year": "1st Year",
+        "contact": "989439"
+    },
+    {
+        "name": "karunya",
+        "room": "009",
+        "room_type": 3,
+        "gender": "Male",
+        "block": "Ganga A",
+        "year": "1st Year",
+        "contact": "886622"
+    },
+    {
+        "name": "pawan",
+        "room": "009",
+        "room_type": 3,
+        "gender": "Male",
+        "block": "Ganga A",
+        "year": "1st Year",
+        "contact": "123456789"
+    }
+]

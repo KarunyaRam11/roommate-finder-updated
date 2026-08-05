@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roommate Finder</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #2193b0, #ff4e9b, #000000, #ff0000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background: #ff4e9b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+<h2>🏠 Roommate Finder</h2>
+
+<form action="/submit" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="text" name="room" placeholder="Room Number" required>
+
+<select name="room_type" required>
+<option value="">Room Type</option>
+<option value="2">2 Sharing</option>
+<option value="3">3 Sharing</option>
+<option value="4">4 Sharing</option>
+<option value="5">5 Sharing</option>
+</select>
+
+<select name="gender" required onchange="updateBlocks()">
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<select name="block" id="block" required>
+<option value="">Select Hostel / Block</option>
+</select>
+
+<select name="year" required>
+<option value="">Year</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+
+<input type="text" name="contact" placeholder="Instagram or Phone" required>
+
+<button type="submit">🚀 Find Roommate</button>
+
+</form>
+</div>
+
+<div class="footer">
+❤️ Created by <b>KARUNYA RAM</b> ❤️ <br>
+<a href="https://instagram.com/karunyaram_1107" target="_blank">📸 Instagram</a>
+</div>
+
+<script>
+function updateBlocks() {
+    let gender = document.querySelector('select[name="gender"]').value;
+    let block = document.getElementById("block");
+
+    block.innerHTML = '<option value="">Select Hostel / Block</option>';
+
+    if (gender === "Female") {
+        let female = ["Godavari","Narmada","Yamuna","Krishna","Ganga A"];
+        female.forEach(b => {
+            let opt = document.createElement("option");
+            opt.value = b;
+            opt.text = b;
+            block.appendChild(opt);
+        });
+    }
+
+    if (gender === "Male") {
+        let male = ["Ganga A","Ganga B","Vedavathi"];
+        male.forEach(b => {
+            let opt = document.createElement("option");
+            opt.value = b;
+            opt.text = b;
+            block.appendChild(opt);
+        });
+    }
+}
+</script>
+
+</body>
+</html>
